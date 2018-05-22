@@ -53,7 +53,7 @@ EXTERN ExitProcess@4 : proc
 ;msgText db 'Windows assembly language lives!', 0
 msgText db 'Windows assembly language lives!', 0
 msgCaption db 'Hello World', 0
-msg         db 'Press something',13,10,0
+msg         db 'Choose one of the following options',13,10,0
 
     .code                       ; Tell MASM where the code starts
 ; «««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««
@@ -63,7 +63,7 @@ start:                          ; The CODE entry point to the program
 ; «««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««
 main proc
     LOCAL txtinput:DWORD        ; a "handle" for the text returned by "input"
-    mov txtinput, input("Type some text at the cursor : ")
+    mov txtinput, input("Enter your name: ")
 	printc "You Entered: "
 	printc txtinput
 	printc "\n"
@@ -72,7 +72,7 @@ main proc
 	invoke  crt_printf,ADDR msg
 
 	.repeat
-    invoke  crt_getchar
+    	invoke  crt_getchar
 
 	.if eax == '1'
 
