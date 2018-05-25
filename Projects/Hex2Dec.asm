@@ -74,173 +74,174 @@ main proc
 
 
 
-		printc "Please Enter A Hexidecimal Value Between 0 And F, Then Press Enter. Press q And Then Enter To Quit\n"
+		printc "Please Enter A Hexidecimal Value Between 0 And F, Then Press Enter. Press q And Then Enter To Quit\n"		; Prints a message and that tells the user what to do
 
-	.repeat
+	.repeat														; For loop for the converter
 		
-		invoke  crt_getchar
+		invoke  crt_getchar										; Gets input from the user
 
-		.if eax == '0'
+		.if eax == '0'											; If the user enters 0
 
-				push 0
-				push offset msgCaption
+				push 0											; Creates a variable
+				push offset msgCaption							; Push message on the stack for pop up window
 				push offset zero
-				push 0
-				call MessageBoxA@16
+				push 0											; Creates a variable
+				call MessageBoxA@16								; Calls the pop up window
 				push eax
 
-		.elseif eax == '1'
+		.elseif eax == '1'										; If the user enters 1
 
-				push 0
-				push offset msgCaption
+				push 0											; Creates a variable
+				push offset msgCaption							; Push message on the stack for pop up window
 				push offset one
-				push 0
-				call MessageBoxA@16
+				push 0											; Creates a variable
+				call MessageBoxA@16								; Calls the pop up window
 				push eax
 
-		.elseif eax == '2'
+		.elseif eax == '2'										; If the user enter 2
 
-				push 0
-				push offset msgCaption
+				push 0											; Creates a variable
+				push offset msgCaption							; Push message on the stack for pop up window
 				push offset two
-				push 0
-				call MessageBoxA@16
+				push 0											; Creates a variable
+				call MessageBoxA@16								; Calls the pop up window
 				push eax
 
-		.elseif eax == '3'
+		.elseif eax == '3'										; If the user enter 3
 
-				push 0
-				push offset msgCaption
+				push 0											; Creates a variable
+				push offset msgCaption							; Push message on the stack for pop up window
 				push offset three
-				push 0
-				call MessageBoxA@16
+				push 0											; Creates a variable
+				call MessageBoxA@16								; Calls the pop up window
 				push eax
 
-		.elseif eax == '4'
+		.elseif eax == '4'										; If the user enter 4
 
-				push 0
-				push offset msgCaption
+				push 0											; Creates a variable
+				push offset msgCaption							; Push message on the stack for pop up window
 				push offset four
-				push 0
-				call MessageBoxA@16
+				push 0											; Creates a variable
+				call MessageBoxA@16								; Calls the pop up window
 				push eax
 
-		.elseif eax == '5'
+		.elseif eax == '5'										; If the user enter 5
 
 				push 0
-				push offset msgCaption
+				push offset msgCaption							; Push message on the stack for pop up window
 				push offset five
-				push 0
-				call MessageBoxA@16
+				push 0											; Creates a variable
+				call MessageBoxA@16								; Calls the pop up window
 				push eax
 
-		.elseif eax == '6'
+		.elseif eax == '6'										; If the user enter 6
 
-				push 0
-				push offset msgCaption
+				push 0											; Creates a variable
+				push offset msgCaption							; Push message on the stack for pop up window
 				push offset six
-				push 0
-				call MessageBoxA@16
+				push 0											; Creates a variable
+				call MessageBoxA@16								; Calls the pop up window
 				push eax
 
 
-		.elseif eax == '7'
+		.elseif eax == '7'										; If the user enter 7
 
-				push 0
-				push offset msgCaption
+				push 0											; Creates a variable
+				push offset msgCaption							; Push message on the stack for pop up window
 				push offset seven
-				push 0
-				call MessageBoxA@16
+				push 0											; Creates a variable
+				call MessageBoxA@16								; Calls the pop up window
 				push eax
 
-		.elseif eax == '8'
+		.elseif eax == '8'										; If the user enter 8
 
-				push 0
-				push offset msgCaption
+				push 0											; Creates a variable
+				push offset msgCaption							; Push message on the stack for pop up window
 				push offset eight
-				push 0
-				call MessageBoxA@16
+				push 0											; Creates a variable
+				call MessageBoxA@16								; Calls the pop up window
 				push eax
 
-		.elseif eax == '9'
+		.elseif eax == '9'										; If the user enter 9
 
-				push 0
-				push offset msgCaption
+				push 0											; Creates a variable
+				push offset msgCaption							; Push message on the stack for pop up window
 				push offset nine
-				push 0
-				call MessageBoxA@16
+				push 0											; Creates a variable
+				call MessageBoxA@16								; Calls the pop up window
 				push eax
 
-		.elseif eax == 'A' || eax == 'a'
+		.elseif eax == 'A' || eax == 'a'						; If the user enter A or a
 
-				push 0
-				push offset msgCaption
+				push 0											; Creates a variable
+				push offset msgCaption							; Push message on the stack for pop up window
 				push offset ten
-				push 0
-				call MessageBoxA@16
+				push 0											; Creates a variable
+				call MessageBoxA@16								; Calls the pop up window
 				push eax
 
-		.elseif eax == 'B'
+		.elseif eax == 'B' || eax == 'b'						; If the user enter B or b
 
-				push 0
-				push offset msgCaption
+				push 0											; Creates a variable
+				push offset msgCaption							; Push message on the stack for pop up window
 				push offset eleven
-				push 0
-				call MessageBoxA@16
+				push 0											; Creates a variable
+				call MessageBoxA@16								; Calls the pop up window
 				push eax
 
-		.elseif eax == 'C'
+		.elseif eax == 'C' || eax == 'c'						; If the user enter C or c
 
-				push 0
-				push offset msgCaption
+				push 0											; Creates a variable
+				push offset msgCaption							; Push message on the stack for pop up window
 				push offset twelve
-				push 0
-				call MessageBoxA@16
+				push 0											; Creates a variable
+				call MessageBoxA@16								; Calls the pop up window
 				push eax
 
-		.elseif eax == 'D'
+		.elseif eax == 'D' || eax == 'd'						; If the user enter D or d
 
-				push 0
-				push offset msgCaption
+				push 0											; Creates a variable
+				push offset msgCaption							; Push message on the stack for pop up window
 				push offset thirteen
-				push 0
-				call MessageBoxA@16
+				push 0											; Creates a variable
+				call MessageBoxA@16								; Calls the pop up window
 				push eax
 
-		.elseif eax == 'E'
+		.elseif eax == 'E' || eax == 'e'						; If the user enter E or e
 
-				push 0
-				push offset msgCaption
+				push 0											; Creates a variable
+				push offset msgCaption							; Push message on the stack for pop up window
 				push offset fourteen
-				push 0
-				call MessageBoxA@16
+				push 0											; Creates a variable
+				call MessageBoxA@16								; Calls the pop up window
 				push eax
 
-		.elseif eax == 'F'
+		.elseif eax == 'F' || eax == 'f'						; If the user enter F or f
 
-				push 0
-				push offset msgCaption
+				push 0											; Creates a variable
+				push offset msgCaption							; Push message on the stack for pop up window
 				push offset fifteen
-				push 0
-				call MessageBoxA@16
+				push 0											; Creates a variable
+				call MessageBoxA@16								; Calls the pop up window
 				push eax
 
 
-		.endif
+		.endif													; End of the loop
 
-		.until eax == 'q'
+		.until eax == 'q'										; If the user enters q, it will exit the loop
 
 	;call ExitProcess@4
 
-    invoke show_text, txtinput
-    ret
+    invoke show_text, txtinput									; Goes to the show_text and it will output the name that was entered at the beginning
+
+    ret															; Pops everything back
 main endp
 ; «««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««
 show_text proc string:DWORD
 
-    print chr$("Thank You",13,10)
-    print string                ; show the string at the console
-    print chr$(" For Using The Hexidecimal To Decimal Converter",13,10)
+    print chr$("Thank You",13,10)													; Prints out Thank you on the console window
+    print string																	; Prints the name that was entered at the beging in the console			
+    print chr$(" For Using The Hexidecimal To Decimal Converter",13,10)				; Prints the message after the window
 	printc "\n"																		; Makes a new line
     ret
 show_text endp
