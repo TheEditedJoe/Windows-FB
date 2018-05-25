@@ -13,6 +13,7 @@ Restrictions or constraints:
 •	Values other than hexadecimal values 0 through F will not do anything
 •	The EXE file is the debugged version of what was intended 
 •	The EXE file that is NOT debugged will print out a thank you message to the name of the user that inputted their name
+•	There is no input validation
 
 
 Dependencies and assumptions of the program:
@@ -21,3 +22,8 @@ Dependencies and assumptions of the program:
 •	Knowledge of Hexadecimals and Decimals
 	
 Technical functionality:
+
+•	The input from the user goes through if/else statements
+o	Each if/else statements have a popup window to display the results of the conversion
+o	The application closes when q is entered
+
