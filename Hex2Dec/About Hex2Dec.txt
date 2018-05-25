@@ -1,0 +1,23 @@
+Kevin Le
+Application details:
+The Purpose of the application is for the user to input their first name. Then it prints out what the user has inputted. Once the user has entered their name, the application will ask the user to input a single hexadecimal and then hit enter. The application converts the single hexadecimal value into a single decimal value. A window will pop up displaying the conversion. The user will hit “Okay” and it will close. The user has the option to enter another hexadecimal value or hit q to quit the application.
+
+Goals:
+This application converts a single hexadecimal value into a single decimal value. A window will pop up displaying the result. The user can quit by entering q instead of a hexadecimal value.
+ 
+Restrictions or constraints:
+•	Must be a machine that supports x86 and windows programs
+•	Only works with single hexadecimal values 0 through F
+•	Single digit
+•	Single Hexadecimal values 0 through F will only work
+•	Values other than hexadecimal values 0 through F will not do anything
+•	The EXE file is the debugged version of what was intended 
+•	The EXE file that is NOT debugged will print out a thank you message to the name of the user that inputted their name
+
+
+Dependencies and assumptions of the program:
+•	X86 processor 
+•	Windows 
+•	Knowledge of Hexadecimals and Decimals
+	
+Technical functionality:
