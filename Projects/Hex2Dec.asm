@@ -38,25 +38,23 @@
 EXTERN ExitProcess@4 : proc
 
 .const
-;msgText db 'Windows assembly language lives!', 0
-msgText db 'Windows assembly language lives!', 0
-zero db 'The Decimal Value of 0 is 0', 0
-one db 'The Decimal Value of 1 is 1', 0
-two db 'The Decimal Value of 2 is 2', 0
-three db 'The Decimal Value of 3 is 3', 0
-four db 'The Decimal Value of 4 is 4', 0
-five db 'The Decimal Value of 5 is 5', 0
-six db 'The Decimal of 6 is 6', 0
-seven db 'The Decimal of 7 is 7', 0
-eight db 'The Decimal of 8 is 8', 0
-nine db 'The Decimal Value of 9 is 9', 0
-ten db 'The Decimal Value of A is 10', 0
-eleven db 'The Decimal Value of B is 11', 0
-twelve db 'The Decimal Value of C is 12', 0
-thirteen db 'The Decimal Value of D is 13', 0
-fourteen db 'The Decimal Value of E is 14', 0
-fifteen db 'The Decimal Value of F is 15', 0
-error db 'ERROR: Please Enter A Hexidecimal Value Between 0 And F', 0
+zero db 'The Decimal Value of 0 is 0', 0			; message for output for the if else statements 
+one db 'The Decimal Value of 1 is 1', 0				; message for output for the if else statements 
+two db 'The Decimal Value of 2 is 2', 0				; message for output for the if else statements 
+three db 'The Decimal Value of 3 is 3', 0			; message for output for the if else statements 
+four db 'The Decimal Value of 4 is 4', 0			; message for output for the if else statements 
+five db 'The Decimal Value of 5 is 5', 0			; message for output for the if else statements 
+six db 'The Decimal of 6 is 6', 0					; message for output for the if else statements 
+seven db 'The Decimal of 7 is 7', 0					; message for output for the if else statements 
+eight db 'The Decimal of 8 is 8', 0					; message for output for the if else statements 
+nine db 'The Decimal Value of 9 is 9', 0			; message for output for the if else statements 
+ten db 'The Decimal Value of A is 10', 0			; message for output for the if else statements 
+eleven db 'The Decimal Value of B is 11', 0			; message for output for the if else statements 
+twelve db 'The Decimal Value of C is 12', 0			; message for output for the if else statements 
+thirteen db 'The Decimal Value of D is 13', 0		; message for output for the if else statements 
+fourteen db 'The Decimal Value of E is 14', 0		; message for output for the if else statements 
+fifteen db 'The Decimal Value of F is 15', 0		; message for output for the if else statements 
+
 msgCaption db 'Hexidecimal To Binary', 0
 msg         db 'Please Choose An Option',13,10,0
 
@@ -67,12 +65,12 @@ start:                          ; The CODE entry point to the program
     exit
 ; «««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««
 main proc
-    LOCAL txtinput:DWORD        ; a "handle" for the text returned by "input"
-    mov txtinput, input("Please Type Your First Name : ")
-	printc "You Entered: "
-	printc txtinput
-	printc "\n"
-	printc "\n"
+    LOCAL txtinput:DWORD										; A "handle" for the text returned by "input"
+    mov txtinput, input("Please Type Your First Name : ")		; Prints a message and asks for input, txtinput	
+	printc "You Entered: "										; Prints a message and that tells what the user inputted
+	printc txtinput												; Prints out what the user entered
+	printc "\n"													; Makes a new line
+	printc "\n"													; Makes a new line
 
 
 
@@ -243,7 +241,7 @@ show_text proc string:DWORD
     print chr$("Thank You",13,10)
     print string                ; show the string at the console
     print chr$(" For Using The Hexidecimal To Decimal Converter",13,10)
-	printc "\n"
+	printc "\n"																		; Makes a new line
     ret
 show_text endp
 ; «««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««««
