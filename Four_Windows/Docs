@@ -1,0 +1,25 @@
+Note each application details:
+
+What is the primary purpose of the application?
+To open 4 borderless windows with the text "Press any button, There can only be four of us." upon attempting to open the 5th window the program shall end 
+
+What is its scope (goals and deliverables)?
+Goals :
+Borderless windows 
+The user cannot move or interact with the windows other than to open more on keystroke
+Windows must close upon attempting to open the 5th one
+The windows must open in front of the previous windows
+ 
+What are the restrictions or constraints in the program?
+Most resolutions below 1920x1080 will probably have the boxes offset off the screen 
+Must be a machine that supports x86 and windows programs
+
+What are the dependencies and assumptions of the program?
+X86 processor 
+Windows 
+A resolution of 1920x1080 or more 
+ 
+What are the technical functionality in the program? Refer to flowchart for details for each program function (input, output, process, data…)
+	
+
+
